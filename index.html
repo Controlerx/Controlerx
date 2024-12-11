@@ -1,0 +1,265 @@
+ <html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PC Gamers et Manettes à palettes haut de gamme">
+    <title>Zen - PC Gamers et Manettes</title>
+    <style>
+        /* === Global Styles === */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #ff66cc;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* === Header === */
+        .header {
+            background: url('https://i.pinimg.com/originals/7c/b9/86/7cb986d6dc8914eb4e26ccb9ed097934.jpg') no-repeat center center;
+            background-size: cover;
+            text-align: center;
+            padding: 2rem 0;
+            height: 500px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            color: #ff66cc;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links li a {
+            color: #f0f0f0;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        .btn-primary {
+            padding: 0.8rem 1.5rem;
+            background-color: #ff66cc;
+            border: none;
+            border-radius: 5px;
+            color: #121212;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: #e055b3;
+        }
+
+        /* === Nouvelle Section (Avec Image de Nezuko) === */
+        .dark-section {
+            background: url('https://wallpapers-clan.com/wp-content/uploads/2023/12/demon-slayer-nezuko-black-pink-desktop-wallpaper-preview.jpg') no-repeat center center;
+            background-size: cover;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 3rem 1rem;
+            height: 500px;
+        }
+
+        .dark-section h2 {
+            font-size: 2.5rem;
+        }
+
+        .dark-section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: auto;
+            padding: 1rem;
+        }
+
+        .dark-section .btn-dark {
+            padding: 0.8rem 1.5rem;
+            background-color: #ff66cc;
+            border: none;
+            border-radius: 5px;
+            color: #121212;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .dark-section .btn-dark:hover {
+            background-color: #e055b3;
+        }
+
+        /* Produits */
+        .products {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            background: #1a1a1a;
+            padding: 1rem;
+            border-radius: 10px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .btn-secondary {
+            background: #333;
+            border: 1px solid #ff66cc;
+            color: #f0f0f0;
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-secondary:hover {
+            background-color: #ff66cc;
+            color: #121212;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 2rem;
+            text-align: center;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .contact-form button {
+            background-color: #ff66cc;
+            color: #121212;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Zen</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero" id="home">
+            <h1>La puissance entre vos mains</h1>
+            <p>Découvrez nos PC gamers et manettes personnalisées pour une expérience ultime.</p>
+            <a href="#products" class="btn-primary">Nos produits</a>
+        </div>
+    </header>
+
+    <!-- Nouvelle Section (Avec Image de Nezuko) -->
+    <section class="dark-section">
+        <h2>Nezuko - La Puissance en Ombre</h2>
+        <p>Un design unique inspiré de l'univers de *Demon Slayer* avec des couleurs intenses et un style inimitable. Vivez l'expérience avec Zen et devenez le héros de votre propre aventure.</p>
+        <a href="#products" class="btn-dark">Voir nos produits</a>
+    </section>
+
+    <!-- Produits -->
+    <section id="products" class="products">
+        <h2><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX5Zu7oN2Y4O1af5rx4teNDbETpcS2cwa67g&amp;s" alt="Demon Slayer Kimetsu No Yaiba Manga Series Desktop Wallpaper 108278 -  Baltana"/>
+        <div class="product-list">
+            <div class="product-card">
+                <img src=<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNYdIqIlFCLjEx36KKV6JYHWM2lQzPpA2kLg&amp;s" alt="PC Gamer AMD Ryzen 9 Navi | megaport.fr - Achat PC gaming"
+                <h3>PC Gamer Bas gamme</h3>
+                <button class="btn-secondary">Découvrir</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200"<img src=<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR731_vlgq0li2NqZwVRL6Z-6KYZ7keiuwh0Q&amp;s" alt="Manette sans fil DualSense® Chroma Pearl PS5 SONY à Prix Carrefour"/>alt="Manette sans fil DualSense Edge™ - I PS5 et PC"/>alt="Manette personnalisée">
+                <h3>Manette à palettes Pro</h3>
+                <p>Précision et confort inégalés.</p>
+                <button class="btn-secondary">Découvrir</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit" class="btn-primary">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Zen . Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Script pour animations ou interactions supplémentaires
+        document.querySelectorAll(".btn-secondary").forEach(button => {
+            button.addEventListener("click", () => {
+                alert("En savoir plus à venir !");
+            });
+        });
+    </script>
+</body>
+</html>//Le site est en cours de developpement
+
